@@ -2,19 +2,28 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CameraController : MonoBehaviour
 {
-    public float cameraSpeed;
-
-    public GameObject player;
-    public float playerHeight;
-
-    private void Update()
+    public float mouseSens;
+    public Transform orientation;
+    private float xRotation;
+    private float yRotation;
+    private void Start()
     {
-        Vector3 dir = player.transform.position - this.transform.position;
-        float deltaSpeed = cameraSpeed * Time.deltaTime;
-        Vector3 moveVector = new Vector3(dir.x * deltaSpeed, (dir.y + playerHeight) * deltaSpeed, dir.z * deltaSpeed);
-        this.transform.Translate(moveVector);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+    void OnLook(InputValue value)
+    {
+        Vector2 mouseDelta = value.Get<Vector2>();
+        yRotation += mouseDelta.x * mouseSens * Time.deltaTime;
+        xRotation -= mouseDelta.y * mouseSens * Time.deltaTime;
+
+        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+
+        transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0);
+        orientation.rotation = Quaternion.Euler(0, yRotation, 0);
     }
 }
