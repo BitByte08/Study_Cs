@@ -8,6 +8,7 @@ public class CameraController : MonoBehaviour
 {
     public float mouseSens;
     public Transform orientation;
+
     private float xRotation;
     private float yRotation;
     private void Start()
