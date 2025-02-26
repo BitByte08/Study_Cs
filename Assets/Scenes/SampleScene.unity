@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 25783092}
   - component: {fileID: 25783091}
   - component: {fileID: 25783090}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,7 +145,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 25783089}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 0e0db8cad1b1f1f458a1e86c3059bf55, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -570,6 +570,30 @@ PrefabInstance:
     - target: {fileID: 608289088825004283, guid: 6e0bfa33a84205f4590b9d741a807b0f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5249494157632441399, guid: 6e0bfa33a84205f4590b9d741a807b0f, type: 3}
+      propertyPath: JumpForce
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5249494157632441399, guid: 6e0bfa33a84205f4590b9d741a807b0f, type: 3}
+      propertyPath: groundDrag
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5249494157632441399, guid: 6e0bfa33a84205f4590b9d741a807b0f, type: 3}
+      propertyPath: jumpCooldown
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5249494157632441399, guid: 6e0bfa33a84205f4590b9d741a807b0f, type: 3}
+      propertyPath: playerHeight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5249494157632441399, guid: 6e0bfa33a84205f4590b9d741a807b0f, type: 3}
+      propertyPath: airMultiplier
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5249494157632441399, guid: 6e0bfa33a84205f4590b9d741a807b0f, type: 3}
+      propertyPath: whatIsGround.m_Bits
+      value: 1024
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
