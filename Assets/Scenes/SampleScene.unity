@@ -527,6 +527,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5619776286645139632, guid: 6e0bfa33a84205f4590b9d741a807b0f, type: 3}
+      propertyPath: m_Actions
+      value: 
+      objectReference: {fileID: -944628639613478452, guid: 7fc63cc9e23ee854ba4bda3008c6077d, type: 3}
+    - target: {fileID: -5619776286645139632, guid: 6e0bfa33a84205f4590b9d741a807b0f, type: 3}
+      propertyPath: m_DefaultControlScheme
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 447669219756057598, guid: 6e0bfa33a84205f4590b9d741a807b0f, type: 3}
       propertyPath: m_Name
       value: Player
@@ -576,8 +584,16 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5249494157632441399, guid: 6e0bfa33a84205f4590b9d741a807b0f, type: 3}
+      propertyPath: walkSpeed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5249494157632441399, guid: 6e0bfa33a84205f4590b9d741a807b0f, type: 3}
       propertyPath: groundDrag
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5249494157632441399, guid: 6e0bfa33a84205f4590b9d741a807b0f, type: 3}
+      propertyPath: sprintSpeed
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5249494157632441399, guid: 6e0bfa33a84205f4590b9d741a807b0f, type: 3}
       propertyPath: jumpCooldown
